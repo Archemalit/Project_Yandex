@@ -67,8 +67,6 @@ class MainWindow(QMainWindow):
             parent=self,
         )
         reply.setDefaultButton(QMessageBox.No)
-        reply.setStyleSheet("QLabel{ border-image: None }")
-        reply.setStyleSheet("QMessageBox{ border-image: None }")
         reply.exec_()
         reply = reply.standardButton(reply.clickedButton())
         if reply == QMessageBox.Yes:
